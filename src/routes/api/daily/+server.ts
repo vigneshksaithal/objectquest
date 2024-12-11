@@ -16,7 +16,7 @@ function getDateString() {
 async function getDailyObject() {
     try {
         const completion = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4o-mini",
             messages: [
                 {
                     role: "system",
@@ -49,7 +49,7 @@ export const GET: RequestHandler = async () => {
     
     try {
         const completion = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4o-mini",
             messages: [
                 {
                     role: "system",

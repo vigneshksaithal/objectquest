@@ -66,6 +66,7 @@ export const GET: RequestHandler = async () => {
                     Format the response as a JSON array of strings.`
                 }
             ],
+            response_format: {json_schema: {type: "array", items: {type: "string"}}},
             temperature: 0.7
         });
 
